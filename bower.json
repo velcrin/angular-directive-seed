@@ -11,18 +11,13 @@
         "angular",
         "javascript"
     ],
-    "main": [
-        "src/*.js",
-        "src/*.html"
-    ],
     "license": "MIT",
     "ignore": [
-        "src/",
-        "**/.*",
+        "**/*.coffee",
         "bower_components/",
         "node_modules/",
         "package.json",
-        "test",
+        "test/",
         "karma.conf.js",
         "README.md"
     ],
