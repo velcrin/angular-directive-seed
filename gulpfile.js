@@ -3,7 +3,7 @@ var gulp = require('gulp'),
     minifyHtml = require("gulp-minify-html"),
     concat = require("gulp-concat"),
     uglify = require("gulp-uglify"),
-    rename = require("gulp-rename"),
+    rename = require("gulp-rename");
 
 gulp.task('build', function () {
 
