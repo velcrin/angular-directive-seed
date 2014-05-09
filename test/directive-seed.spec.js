@@ -3,7 +3,7 @@ chai.Should();
 describe('DirectiveSeed', function () {
     var $compile, $controller, $rootScope;
 
-    beforeEach(module('directiveSeed', 'directive-seed.html'));
+    beforeEach(module('directiveSeed'));
 
     beforeEach(inject(function (_$compile_, _$controller_, _$rootScope_) {
         $compile = _$compile_;

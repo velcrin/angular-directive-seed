@@ -31,6 +31,10 @@ module.exports = function (config) {
             '**/*.html': ['ng-html2js']
         },
 
+        ngHtml2JsPreprocessor: {
+            moduleName: 'directiveSeed'
+        },
+
         // test results reporter to use
         // possible values: 'dots', 'progress', 'junit', 'growl', 'coverage'
         reporters: ['progress'],
