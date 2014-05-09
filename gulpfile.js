@@ -3,22 +3,25 @@ var gulp = require('gulp'),
     minifyHtml = require("gulp-minify-html"),
     concat = require("gulp-concat"),
     uglify = require("gulp-uglify"),
-    rename = require("gulp-rename");
+    rename = require("gulp-rename"),
+    es = require('event-stream'),
+    package = require('./package.json');
 
 gulp.task('build', function () {
 
-    gulp.src("src/*.html")
+    var html2Js = gulp.src(["src/*.html"])
         .pipe(minifyHtml({
             empty: true,
             spare: true,
             quotes: true
         }))
         .pipe(ngHtml2Js({
-            moduleName: "directiveSeed"
-        }))
-        .pipe(concat("directiveSeed.js"))
+            moduleName: package.moduleName
+        }));
+    es.merge(html2Js, gulp.src(["src/*.js"]))
+        .pipe(concat(package.directiveName + ".js"))
         .pipe(gulp.dest('dist'))
-        .pipe(rename('directiveSeed.min.js'))
+        .pipe(rename(package.directiveName + '.min.js'))
         .pipe(uglify())
         .pipe(gulp.dest('dist'));
 });

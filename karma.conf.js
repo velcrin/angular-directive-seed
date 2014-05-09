@@ -1,6 +1,8 @@
 // Karma configuration
 // Generated on Fri Jan 10 2014 15:28:34 GMT-0800 (PST)
 
+var package = require('./package.json');
+
 module.exports = function (config) {
     config.set({
 
@@ -32,7 +34,7 @@ module.exports = function (config) {
         },
 
         ngHtml2JsPreprocessor: {
-            moduleName: 'directiveSeed'
+            moduleName: package.moduleName
         },
 
         // test results reporter to use
