@@ -1,27 +1,32 @@
 {
-  "name": "angular-directive-seed",
-  "version": "0.0.1",
-  "homepage": "https://github.com/velcrin/angular-directive-seed",
-  "authors": [
-    "Vincent Elcrin <vincent.elcrin@gmail.com>"
-  ],
-  "description": "A directive seed for angular",
-  "keywords": [
-    "angular",
-    "javascript"
-  ],
-  "license": "MIT",
-  "ignore": [
-    "src/",
-    "**/.*",
-    "bower_components/",
-    "node_modules/",
-    "package.json",
-    "test",
-    "karma.conf.js",
-    "README.md"
-  ],
-  "devDependencies": {
-    "angular-mocks": "~1.2.8"
-  }
+    "name": "angular-directive-seed",
+    "version": "0.0.1",
+    "homepage": "https://github.com/velcrin/angular-directive-seed",
+    "authors": [
+        "Vincent Elcrin <vincent.elcrin@gmail.com>"
+    ],
+    "description": "A directive seed for angular",
+
+    "keywords": [
+        "angular",
+        "javascript"
+    ],
+    "main": [
+        "src/*.js",
+        "src/*.html"
+    ],
+    "license": "MIT",
+    "ignore": [
+        "src/",
+        "**/.*",
+        "bower_components/",
+        "node_modules/",
+        "package.json",
+        "test",
+        "karma.conf.js",
+        "README.md"
+    ],
+    "devDependencies": {
+        "angular-mocks": "~1.2.8"
+    }
 }
